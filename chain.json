@@ -1,0 +1,69 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "redshift",
+  "status": "live",
+  "network_type": "mainnet",
+  "website": "https://fury.fan",
+  "pretty_name": "Fanfury",
+  "chain_id": "redshit-1",
+  "bech32_prefix": "fury",
+  "daemon_name": "furyd",
+  "node_home": "$HOME/.fury",
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "ufury",
+        "fixed_min_gas_price": 0
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "ufury"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/redactedfury/furyhubchain",
+    "recommended_version": "v0.1",
+    "compatible_versions": [
+      "v0.1"
+    ],
+    "binaries": {
+      "linux/amd64": "https://github.com/redactedfury/furyhubchain.git"
+    },
+    "genesis": {
+      "genesis_url": "https://raw.githubusercontent.com/redactedfury/furyhubchain/chain.json"
+    }
+  },
+  "peers": {
+    "seeds": [
+      {
+        "id": "4acf579e2744268f834c713e894850995bbf0ffa",
+        "address": "50.18.31.225:26656"
+      },
+    ]
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://rpc.akash.forbole.com:443",
+        "provider": "forbole"
+      },
+    ],
+    "rest": [
+      {
+        "address": "https://api.akash.forbole.com:443",
+        "provider": "forbole"
+      },
+    ],
+    "grpc": [
+      {
+        "address": "grpc-akash-ia.cosmosia.notional.ventures:443",
+        "provider": "Notional"
+      },
+    ]
+  },
+}
